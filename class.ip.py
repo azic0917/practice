@@ -8,7 +8,7 @@ print("===== INHERITANCE =====")
 # PARENT > CHILD [only provides public & protected properties(state + method)]
 
 
-class Animal:  # Parent
+class Animal(object):  # Parent
     # state
     description = "This class is parent for animals"
 
@@ -39,6 +39,9 @@ class Dog(Animal):  # Child
 
     def protect(self):
         print("Yes, I can protect you!")
+
+    def make_voice(self):
+        print(f"the {self.name} says {self.sound}")
 
 
 class Cat(Animal):  # Child
@@ -97,3 +100,23 @@ print(dog.voice, fish.voice)
 # print("cat.status:", cat.status)
 print("dog.status:", dog._status)
 print("cat.status:", cat._status)
+
+
+print("===== POLYMORPHISM =====")
+
+dog.make_voice()
+fish.make_voice()
+
+print("-----")
+# fish > Fish > Animal > object
+a = isinstance(fish, Fish)
+b = isinstance(fish, Animal)
+c = isinstance(fish, object)
+d = isinstance("MIT", object)
+result = a and b and c and d
+print(f"the result: {result}")
+
+# Fish > Animal > object
+data1 = issubclass(Fish and Dog and Cat, Animal)
+data2 = issubclass(Animal, object)
+print("data:", data1, data2)
