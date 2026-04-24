@@ -1,7 +1,7 @@
 print("===== Iterable objects & RANGE =====")
 # Iterable objects > string dict tuple list range map filter
 
-range_obj = range(3)  # 0 ~ 3 (3 not included)
+range_obj = range(3)  # [0, 3) (3 not included)
 print("range_obj:", range_obj)
 
 # text = "MIT"
