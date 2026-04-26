@@ -1,11 +1,32 @@
+/* MITASK-E
+
+Savol: Shunday function tuzing, u bitta string 
+argumentni qabul qilib osha stringni teskari qilib return qilsin.
+MASALAN: getReverse("hello") return qilsin "olleh"
+*/
+
+// Masalaning yechimi:
+
+function getReverse(str) {
+    let reversed = "";
+    for (let i = str.length - 1; i >= 0; i--) {
+        reversed += str[i];
+    }
+    return reversed;
+}
+
+const result = getReverse("encapsulation");
+console.log(result);
+
+
 /* MITASK-D
 
-Savol: Shunday function tuzingki unga integerlardan iborat array pass 
+Savol: Shunday function tuzingki unga integerlardan iborat array pass
 bolsin va function bizga osha arrayning eng katta qiymatiga tegishli birinchi indexni qaytarsin.
 MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini.
 */
 
-// Masalaning yechimi:
+/* Masalaning yechimi:
 
 function getHighestIndex(arr) {
     let highest = arr[0];
@@ -21,6 +42,7 @@ function getHighestIndex(arr) {
 
 const result = getHighestIndex([6, -3, 15, 2, 15, 9]);
 console.log(result);
+*/
 
 /* MITASK-C
 
