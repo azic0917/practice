@@ -1,0 +1,78 @@
+''' Packages & Debugging
+    (1) Python Packages & Core Package
+    (2) Package Manager & External Package
+    (3) Debugging
+'''
+
+import turtle
+# from turtle import Screen, Turtle, done
+print("===== Python Packages & Core Package =====")
+''' Python Packages/Modules: Core, File and External '''
+# Core Packages > https://docs.python.org/3/library/
+
+
+# Core package
+# t = turtle.Turtle()
+# t.shape("turtle")
+# t.speed(2)
+# t.circle(150)
+
+# turtle.done()
+
+'''
+screen = Screen()
+screen.bgcolor("white")
+
+t = Turtle()
+t.speed(0)
+
+t.penup()
+t.goto(0, -100)
+t.pendown()
+t.color("#D2691E")  # crust color
+t.begin_fill()
+t.circle(150)
+t.end_fill()
+
+t.penup()
+t.goto(0, -80)
+t.pendown()
+t.color("#FFD700")  # cheese color
+t.begin_fill()
+t.circle(130)
+t.end_fill()
+
+
+def draw_pepperoni(x, y):
+    t.penup()
+    t.goto(x, y)
+    t.pendown()
+    t.color("#B22222")
+    t.begin_fill()
+    t.circle(20)
+    t.end_fill()
+
+
+positions = [(-50, 20), (40, 50), (-30, -40), (60, -20), (0, 60)]
+for pos in positions:
+    draw_pepperoni(pos[0], pos[1])
+
+t.hideturtle()
+
+done()
+'''
+
+print("-----")
+my_file = open("material/message.txt", "r")
+try:
+    content = my_file.read()
+    print("content:", content)
+finally:
+    my_file.close()
+
+# with - Context Manager
+with open("material/message.txt", "r") as your_file:
+    your_content = your_file.read()
+    print("your_content:", your_content)
+
+print("DONE")
