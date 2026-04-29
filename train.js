@@ -1,11 +1,34 @@
+/* MITASK-F
+
+Savol: Shunday findDoublers function tuzing, unga faqat bitta string argument pass bolib, agar stringda bir hil harf qatnashgan bolsa true, qatnashmasa false qaytarishi kerak.
+MASALAN: getReverse("hello") return true return qiladi
+*/
+
+// Masalaning yechimi:
+
+function findDoublers(str) {
+    let checked = [];
+    for (let i = 0; i < str.length; i++) {
+        let char = str[i];
+        if (checked.includes(char)) {
+            return true;
+        }
+        checked.push(char);
+    }
+    return false;
+}
+
+const result = findDoublers("application");
+console.log(result);
+
 /* MITASK-E
 
-Savol: Shunday function tuzing, u bitta string 
+Savol: Shunday function tuzing, u bitta string
 argumentni qabul qilib osha stringni teskari qilib return qilsin.
 MASALAN: getReverse("hello") return qilsin "olleh"
 */
 
-// Masalaning yechimi:
+/* Masalaning yechimi:
 
 function getReverse(str) {
     let reversed = "";
@@ -17,7 +40,7 @@ function getReverse(str) {
 
 const result = getReverse("encapsulation");
 console.log(result);
-
+*/
 
 /* MITASK-D
 
