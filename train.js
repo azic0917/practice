@@ -1,6 +1,7 @@
 /* MITASK-F
 
-Savol: Shunday findDoublers function tuzing, unga faqat bitta string argument pass bolib, agar stringda bir hil harf qatnashgan bolsa true, qatnashmasa false qaytarishi kerak.
+Savol: Shunday findDoublers function tuzing, unga faqat bitta string argument pass bolib, 
+agar stringda bir hil harf qatnashgan bolsa true, qatnashmasa false qaytarishi kerak.
 MASALAN: getReverse("hello") return true return qiladi
 */
 
