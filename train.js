@@ -1,11 +1,48 @@
+/* MITASK-J
+
+Savol: Shunday function yozing, u parametridagi array
+ichida eng kop takrorlangan raqamni topib qaytarsin.
+MASALAN: majorityElement([1,2,3,4,5,4,3,4]) return 4
+*/
+
+// Masalaning yechimi:
+
+function majorityElement(arr) {
+    let count = {};
+
+    for (let num of arr) {
+        if (count[num]) {
+            count[num]++;
+        } else {
+            count[num] = 1;
+        }
+    }
+
+    let mostFrequency = 0;
+    let mostFrequentNumber = null;
+
+    for (let key in count) {
+        if (count[key] > mostFrequency) {
+            mostFrequency = count[key];
+            mostFrequentNumber = key;
+        }
+    }
+
+    return mostFrequentNumber;
+}
+
+const result = majorityElement([1, 2, -3, 6, 5, 4, -3, 4, -3]);
+console.log(result);
+
+
 /* MITASK-H
 
-Savol: shunday function tuzing, u integerlardan iborat arrayni 
+Savol: shunday function tuzing, u integerlardan iborat arrayni
 argument sifatida qabul qilib, faqat positive qiymatlarni olib string holatda return qilsin
 MASALAN: getPositive([1, -4, 2]) return qiladi "12"
 */
 
-// Masalaning yechimi:
+/* Masalaning yechimi:
 
 function getPositive(arr) {
     let positive = [];
@@ -19,6 +56,7 @@ function getPositive(arr) {
 
 const result = getPositive([6, -3, 15, 2, 9]);
 console.log(`"${result}"`);
+*/
 
 /* MITASK-F
 
