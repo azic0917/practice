@@ -1,3 +1,34 @@
+/* MITASK-L
+
+Savol: Shunday function yozing, u string qabul qilsin va string ichidagi 
+hamma sozlarni chappasiga yozib va sozlar ketma-ketligini buzmasdan stringni qaytarsin.
+MASALAN: reverseSentence("we like coding!") return "ew ekil gnidoc";
+*/
+
+// Masalaning yechimi:
+
+function reverseSentence(str) {
+    str = str.replace("!", "");
+
+    let words = str.split(" ");
+
+    for (let i = 0; i < words.length; i++) {
+        let word = words[i];
+        let reversed = "";
+
+        for (let j = word.length - 1; j >= 0; j--) {
+            reversed += word[j];
+        }
+
+        words[i] = reversed;
+    }
+
+    return words.join(" ");
+}
+
+const result = reverseSentence("we like coding!");
+console.log(result);
+
 /* MITASK-J
 
 Savol: Shunday function yozing, u parametridagi array
@@ -5,7 +36,7 @@ ichida eng kop takrorlangan raqamni topib qaytarsin.
 MASALAN: majorityElement([1,2,3,4,5,4,3,4]) return 4
 */
 
-// Masalaning yechimi:
+/* Masalaning yechimi:
 
 function majorityElement(arr) {
     let count = {};
@@ -33,7 +64,7 @@ function majorityElement(arr) {
 
 const result = majorityElement([1, 2, -3, 6, 5, 4, -3, 4, -3]);
 console.log(result);
-
+*/
 
 /* MITASK-H
 
