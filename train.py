@@ -1,10 +1,29 @@
 '''
+MITASK-M
+
+Savol: Shunday function yozing, u string qabul qilsin va string palindrom yani togri oqilganda ham, 
+orqasidan oqilganda ham bir hil oqiladigan soz ekanligini aniqlab boolean qiymat qaytarsin.
+MASALAN: palindrom_check("dad") return True;  palindrom_check("son") return False;
+'''
+
+# Masalaning yechimi:
+
+
+def palindrom_check(str):
+    return str == str[::-1]
+
+
+result = palindrom_check("eye")
+print(result)
+
+'''
 MITASK-K
 
 Savol: Shunday function yozing, u string qabul qilsin va string ichidagi eng uzun sozni qaytarsin.
 MASALAN: find_longest("I come from Uzbekistan") return "Uzbekistan"
 '''
 
+'''
 # Masalaning yechimi:
 
 
@@ -22,6 +41,7 @@ def find_longest(str):
 result = find_longest(
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit")
 print(result)
+'''
 
 '''
 MITASK-I
