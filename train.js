@@ -1,11 +1,39 @@
+/* MITASK-N
+
+Savol: Shunday function yozing, u raqamlardan tashkil topgan array 
+qabul qilsin va array ichidagi har bir raqam uchun raqamni ozi va 
+hamda osha raqamni kvadratidan tashkil topgan object hosil qilib, 
+hosil bolgan objectlarni array ichida qaytarsin.
+MASALAN: getSquareNumbers([1, 2, 3]) return [{number: 1, square: 1}, {number: 2, square: 4}, {number: 3, square: 9}];
+*/
+
+// Masalaning yechimi:
+
+function getSquareNumbers(arr) {
+    let result = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        let num = arr[i];
+        let square = num * num;
+        let obj = { number: num, square: square };
+
+        result.push(obj);
+    }
+
+    return result;
+}
+
+const result = getSquareNumbers([2, 3, 4]);
+console.log(result);
+
 /* MITASK-L
 
-Savol: Shunday function yozing, u string qabul qilsin va string ichidagi 
+Savol: Shunday function yozing, u string qabul qilsin va string ichidagi
 hamma sozlarni chappasiga yozib va sozlar ketma-ketligini buzmasdan stringni qaytarsin.
 MASALAN: reverseSentence("we like coding!") return "ew ekil gnidoc";
 */
 
-// Masalaning yechimi:
+/* Masalaning yechimi:
 
 function reverseSentence(str) {
     str = str.replace("!", "");
@@ -28,6 +56,7 @@ function reverseSentence(str) {
 
 const result = reverseSentence("we like coding!");
 console.log(result);
+*/
 
 /* MITASK-J
 
