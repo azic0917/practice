@@ -1,4 +1,28 @@
 '''
+MITASK-O
+
+Savol: Shunday function yozing, u har xil valuelardan iborat array qabul 
+qilsin va List ichidagi sonlar yigindisini hisoblab chiqqan javobni qaytarsin.
+MASALAN: calculate_summary([10, "10", {"son": 10}, True, 35]) return 45
+'''
+
+# Masalaning yechimi:
+
+
+def calculate_summary(arr):
+    total = 0
+
+    for item in arr:
+        if type(item) == int:
+            total += item
+
+    return total
+
+
+result = calculate_summary([10, "10", {"son": 10}, True, 35])
+print(result)
+
+'''
 MITASK-M
 
 Savol: Shunday function yozing, u string qabul qilsin va string palindrom yani togri oqilganda ham, 
@@ -6,6 +30,7 @@ orqasidan oqilganda ham bir hil oqiladigan soz ekanligini aniqlab boolean qiymat
 MASALAN: palindrom_check("dad") return True;  palindrom_check("son") return False;
 '''
 
+'''
 # Masalaning yechimi:
 
 
@@ -15,6 +40,7 @@ def palindrom_check(str):
 
 result = palindrom_check("eye")
 print(result)
+'''
 
 '''
 MITASK-K
