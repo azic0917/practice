@@ -1,13 +1,35 @@
+/* MITASK-P
+
+Savol: Shunday function yozing, u object qabul qilsin va arrayni 
+object arrayga otkazib arrayni qaytarsin qaytarsin.
+MASALAN: objectToArray( {a: 10, b: 20}) return [['a', 10], ['b', 20]]
+*/
+
+// Masalaning yechimi:
+
+function objectToArray(obj) {
+    let result = [];
+
+    for (let key in obj) {
+        result.push([key, obj[key]]);
+    }
+
+    return result;
+}
+
+const result = objectToArray({ a: 10, b: 20 });
+console.log(result);
+
 /* MITASK-N
 
-Savol: Shunday function yozing, u raqamlardan tashkil topgan array 
-qabul qilsin va array ichidagi har bir raqam uchun raqamni ozi va 
-hamda osha raqamni kvadratidan tashkil topgan object hosil qilib, 
+Savol: Shunday function yozing, u raqamlardan tashkil topgan array
+qabul qilsin va array ichidagi har bir raqam uchun raqamni ozi va
+hamda osha raqamni kvadratidan tashkil topgan object hosil qilib,
 hosil bolgan objectlarni array ichida qaytarsin.
 MASALAN: getSquareNumbers([1, 2, 3]) return [{number: 1, square: 1}, {number: 2, square: 4}, {number: 3, square: 9}];
 */
 
-// Masalaning yechimi:
+/* Masalaning yechimi:
 
 function getSquareNumbers(arr) {
     let result = [];
@@ -25,6 +47,7 @@ function getSquareNumbers(arr) {
 
 const result = getSquareNumbers([2, 3, 4]);
 console.log(result);
+*/
 
 /* MITASK-L
 
